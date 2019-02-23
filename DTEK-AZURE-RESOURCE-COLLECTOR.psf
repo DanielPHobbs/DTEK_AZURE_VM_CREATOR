@@ -1,128 +1,325 @@
 ﻿<File version="3.1">
   <FileID>5d4ffab2-a0b9-42fd-a4cc-3ee7484bff51</FileID>
   <Preview>iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABgQSURBVHhe7d3bc9f3nd/x/AXN3uxf0Lte70Wv
-O9vp1Xa607u2m9lOu5M27KRNPGns2LG9jZ3YgLFd7OAYbINjY2wOBowQJ4OEJHQ+S4DAEjqiA+Jo
-3PiQzrvfzw+wWaxPwLScPjyeM48Rkn6/n/Tzzef1/Ung70mSJEmSJEmSJEmSJEmSJEmSJEmSJEmS
-JEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmS
-JEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmS
-JEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmS
-JEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmS
-JEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmS
-JEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJOmbfvVn
-f/b9+mXL/r5+5ar/Vf/886vqnwMAHijPr1hVv2rVS/X/6l/+ZX11tid/uu9//580LX/h5eg8Ph3D
-E+djcPwsAPCAGRo/F0OT56Opcyj+6q/+dVw95vP9l/+6rL7r2HQ0D07Goe5P4lAPAPAgOljp+mQx
-tu/++OYD4MWXVtePzFyKht7RONw3BgAPt/5T0TI4ES1D303TwHjt/s3V26U+/6c0D165b1P62kt8
-/mbS/a59/0eOzkRz59DNB8CKlS/WBkC6c/qmmweqt9UTT68IXJFeHbhqoPr417cDgPKkQ3RX40B8
-1NB/y3Ye6ouPO07EkaHJ2Nd6rPb+Urdbys5D/VHfPFQbHQ3VFfxSt7mZhu5PouXq999+bDYaW/tu
-bQCcOP1pdadqRaTFkw79npFo6hqOpu7j0dgxEA2tXbW3zX3VF6ie3JXbTdSeaHLt/XTfb/5cScvk
-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
-BgAAxTIA8gwAAIplAOQZAAAUywDIMwAAKJYBkGcAAFAsAyDPAACgWAZAngEAQLEMgDwDAIBiGQB5
-BgAAxTIA8gwAAIplAOQZAAAUywDIMwAAKJYBkGcAAFAsAyDPAACgWAZAngEAQLEMgDwDAIBiGQB5
-BgAAxTIA8gwAAIplAOQZAAAUywDIMwAAKJYBkGcAAFAsAyDPAACgWAZAngEAQLEMgDwDAIBiGQB5
-BgAAxTIA8gwAAIplAOQZAAAUywDIMwAAKJYBkGcAAFAsAyDPAACgWAZAngEAQLEMgDwDAIBiGQB5
-BgAAxTIA8gwAAIplAOQZAAAUywDIMwAAKJYBkGcAAFAsAyDPAACgWAZAngEAQLEMgDwDAIBiGQB5
-BgAAxTIA8gwAAIplAOQZAAAUywDIMwAAKJYBkGcAAFAsAyDPAACgWAZAngEAQLEMgDwDAIBiGQB5
-BgAAxTIA8gwAAIplAOQZAAAUywDIMwAAKJYBkGcAAFAsAyDPAACgWAZAngEAQLEMgDwDAIBiGQB5
-BgAAxTIA8gwAAIplAOQZAAAUywDIMwAAKJYBkGcAAFAsAyDPAACgWAZAngEAQLEMgDwDAIBiGQB5
-BgAAxTIA8gwAAIplAOQZAAAUywDIMwAAKJYBkGcAAFAsAyDPAACgWAZAngEAQLEMgDwDAIBiGQB5
-BgAAxTIA8gwAAIplAOQZAAAUywDIMwAAKJYBkGcAAFAsAyDPAACgWAZAngEAQLEMgDwDAIBiGQB5
-BgAAxTIA8gwAAIplAOQZAAAUywDIMwAAKJYBkGcAAFAsAyDPAACgWAZAngEAQLEMgDwDAIBiGQB5
-BgAAxTIA8gwAAIplAOQZAAAUywDIMwAAKJYBkGcAAFAsAyDPAACgWAZAngEAQLEMgDwDAIBiGQB5
-BgAAxTIA8gwAAIplAOQZAAAUywDIMwAAKJYBkGcAAFAsAyDPAACgWAZAngEAQLEMgDwDAIBiGQB5
-BgAAxTIA8gwAAIplAOQZAAAUywDIMwAAKJYBkGcAAFAsAyDPAACgWAZAngEAQLEMgDwDAIBiGQB5
-BgAAxTIA8gwAAIplAOQZAAAUywDIMwAAKJYBkGcAAFAsAyDPAACgWAZAngEAQLEMgDwDAIBiGQB5
-BgAAxTIA8gwAAIplAOQZAAAUywDIMwAAKJYBkGcAAFAsAyDPAACgWAZAngEAQLEMgDwDAIBiGQB5
-BgAAxTIA8gwAAIplAOTdsQHw6KOPxqZNm6Kuri527doFAHfd3r1745VXXomVK1caADe4IwPgyy+/
-jB/96EexbNmyeOSRR+KnP/0pANx1P/vZz+IHP/hBPP/88wbADe7IAPj0009jeHg4Ghsbo6GhAQDu
-mcOHD8fY2FhcuvTt8+phdkcGwPnz52s/BkivBADAvfbZZ5/VzqYbz6uH2R0ZAMnFixe/Xlvpz3db
-+rrWHgD32vXn0vXn1N201Hl4x34EMDMzEx0dHdHb23tP9PT01KTvJz35G79HALjT0nk4OTkZ7e3t
-S55Vd0N3d3f09/d/6yy8IwPg8uXLMTo6WvvC6YmfOnXqTxs7FdOnZ2JqcmLpz18zPlENi9kYPzW2
-9OevMz4+XhsgZ8+eNQAAuCfSeXjixInaATwxcZMz7pqxsZiYmo7Fc2dj8cxinJ6ejLHqnByrPjdV
-fXy6OlcnJsaXvu8S0u8/dHV1fetHIHdsAKQvODAwENPT07UnnTcZM7OT0bavMXr6R6onN1mNgdlY
-mJutPdH5hYWYm52JyamZmJ8ejZamPXFi/HRtLCz9eFek4ZFWjwEAwL2SzsOTJ0/G0NBQdaZNLXle
-3Wj69OkY6W6Ol5/9TSxfsTw+au6LxYX5WJifi862lmgbGImZ6nycqg2BpR/jeumCOL0ifl8OgIXz
-U/HuM6/Grv09cWZxIY71tsauA00x9slIHNj/cbT2HIvTU6di7+Y34qlnHo3hifPVAlrqsb5hAABw
-r93OAJhdnI/D770bK59eF12DPXG4uTmGj5+Iwb7OONLVHwfqNsWvnn8tRmeqC+WbnIXJfT0A5s9N
-xQcr1sX+puOxcKqnWjzPxFPPPRtvbf4gfvnf/y7+/Q9/FK9vWBtPPP5YPPb0L2Nk2gAA4P53WwPg
-zEK0b38v/v5vfhwvrl4dO3Zuieef/nE8//Irseat38fyl1fEI4/9pjoL567+OGDpx7nmPn8FYDre
-/81vY/vevhhq2Rr/sHpNtDTuih8+9kiseGl5/PIn/y5+8vQ/RP3+3fHqyidjcPysAQDAfe/2XwHY
-GKueWR89Rwfj1Gh/PPaf/20898bWeGfDunhu7YZ4s/rz1PxcTC5x/xvd1wNg7sxsbHp5efztf/y7
-eHLFq/H7t16NXzy3Kg427I1Xfv3reHbFythbHf5P//yReOm1DXFq5ozfAQDgvnc7A2BmbjaGW/bH
-//zZL+LXz/0m/sfjT8TqtWtj3UvPxcrVb8S+pkOxduXvontkPGamH+BXANJBPX5qPNb87nex6oWV
-sXz58q+/0dnZuZibn4/5hTMxNzsbCwsLMV+9PzkxvuRjXc8AAOBeu50BMFEd2FMzp2PhzHycO3cu
-Dh1qiJUrX4gVK1fGu+++E4vpTLzFq//krg+A9NcA0197uNkASN9YepsO98XFxZp0n2sfv11pAHR2
-dhoAANwz6TxMfw1wcHDw1gfAddJZmP5dnTNnzsSZ6nxMF8Hf9XxMt79rfw0w/cMH6RBva2ur/VsA
-aXncbenq/9oTNgAAuBfSeZgO4HQeLnVW3Q3pLExn8Y1n4R0ZAMm1L5QO4HvFwQ/AvXa/nod3bAAA
-APcvAwAAHkIGAAA8hP6/DID0IADAg+PypQsxd/b/YQCcmLlUWxAAwINjvjr8J+cvxtHbGQDHpi/V
-pPUAADxY0uGfzvFbHgArXnh5z4WvonYHAODBNnM5omd49OYD4BdPPNk4fHKiWgvHaosBAHhw9QyN
-xp79jTcfAJIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIk
-SZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIk
-SZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIk
-SZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIk
-SZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIk
-SZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIk
-SZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSYX2ve/9X9cr0+or13jGAAAAAElFTkSuQmCC</Preview>
-  <Form>Yi9Y1AIaaAoAACODCAAAAAAABADVlduO2jAQhu8r9R2sXPQq4nxYVIi0HLatFrqIUHqJTDILLo6NbGeBPn0n
-BMS2SUlohdQKKcLK/DP/2N847afFN/CMdt6+IaQdL4jZb6BjuXttICh8ZcKXW114kCqInzZJe2WT
-GSjNpOjUCqXoZ5NeyE2ooCMgNIpym4zDBWfeI+yncg2is2g2ad2rN8qtag1Kdy2LCBpg5WfMN6JM
-WMRbMe4rDLV6UhglubYOTtHrWMkNKLM/au5DI12PcuizAETkA0MbNilX28VTaJZ0JH2wnAeslKnp
-cQbCuOw7CsqlVtMm9XojU/UZn5Zzai8z3DVUmbHUzGA7ltPDiqBcTwFka6ewM5bzQTE/GTp4wUzH
-uKGk/tnSPFq2i4eAU3Q2FH1qaFRpxmB7czh8LLbEYi9YbAIas+hLnKQcN+dy+0WDmsp735+gRzxz
-yjUkNuqitg8cDFwpF95KKsuZyo1NutIYicM0hGdjkwlbrpLYJVMMpUdjHMoVm1RaOSQxdSn7lkM7
-Aeo/Cb5HzyrM02I8Eq0qnnDtLjkRKaDSxSfhw85yKmnRr1ntSR4G4iNaAjWSoQacQm+d2to8PfYX
-tIsx2/lJ74Z4ZuLmjC8OZQY7Zq5E+8jXCa0/gKpURt/1Sjk3V2evuelo1pHc5L18iY08fuIrb/CO
-Bpv3+ezgJPdksMHeFxwi+QSwnGJimZt3TDFjOqTcNXsOXeqtkbzDjP9G/xPQMb/nLZz/f5QePiB/
-RWl0AV59812PaPxpux2ipdyIHgjNaeefQjTynInoq8Xpr3Z+AK34W2ZoCgAA</Form>
+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
+bRHeHZOiPXZdMck2SdlCnlPbo+yyWu3aE2eLc62y7PKzyptsqElTUmGTCuo6FZdkQ0JuvbLsevfu
+c+fPVnZtp2IT05RY0Kx0u7N27k1RWmG13Y4MZVZ2KKeq3S63TlGJOYq34Sc2UKWc8nobUtK82xVh
+t90NNLm2TbJtOxMR0fAqp6rNW/gjEgpsIAja982Kz67R+q1R2hoWq23h+7Rxa6QNCLbT6D6EV2g7
+jLaYu0XZvXWfYsNBqh2WYmvNzogExcQmasHi1xUVFa+wPQlKyAsdn2mXHWMLv9ubd4u6e9c5xXs3
+u1HvfLhFweZm5drwsGLtLmWUuetx78A32s9ia1ZKia3THcqv7VZWUfXZDQD13Z8rp6Zd+Y37lZqe
+qx2jL9OG++/Th3vj9fqa7YqMDFNuZVCFDZ2KsUXNbYQ428NOyi2xPeRCBUortSsy2famm7Q3Ksb2
+fm1vv9x+oPQC28Mv1267geFR+xRle937UjJtIW1SdkmFDQ8FtkddqsiEdO2JSbQ9+nwlBvJs0cyw
+y2pWQmahku34PdE2ACTlKjErX+HRacq0PfLcykZboJPstKm2eNtGKyi1BThTUbbQp9sNj7IBxQ0J
+u/dl2p56sQ0X2TYAdCunwiY424NPdr/yyCvz3jVwe+8JNpUV1Hcq3oaMeJvCAjaYRNptjUzIVm59
+tzcYuM9CBAqKvAElUOYW+HRlVLR5C3tOhRsAsu3nL7ABoFI5ZTWKtmFqb1yy986D+1BGvg0Subad
+iYhoeOUW1ozSJlvQC219a1G6Lb4RycVa9dEmZQcCCmQGFB62Wx9tibYd305vRznd2mun2ZNUZIu7
++7V4ky3abVq5Zod2hYVr4ybbi98VofdWb7Hjgt7x7p3imPRyhdugsc/WEvfOfLbt0e+IydLyFau0
+bsM2O992vfHOKm+tce+0u4EkMadGUTY4FDV0qdDW8uzimrMbAJr2f6H8OjtTQ6/t+dYoKSVNe2zx
+vP/9Nt35Yq23kBdUt6i4ab+SMnLsuDRvGsmrarQhoNq+Ntket+0hu88P5FYqvaDKFtZyFQcP20Jv
+3+dU2J5/o/alZXtv9Uel5NpkVKfEtCxvzz6jpNYGBdsjtz33uLQc7+1990nL4qaDKqhpVnJule2t
+12tf+rHj8iuVZAttdGq+7Xk3Ks6GiqjkHGVXdyk1O8/2uNNsQ9pl5rnzNdjPWKHU3CLtTQjYnVBl
+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
+16svv6Lly1/VqEt/r7nPv6M333pdazas06svvKy3P9isrLR9Wv/xdhui3d7RID+vdaEMAM0tHarI
+3KUbfjteCUm7dfuld2vDzm168bnntSs2Wcn7InTXdT/X9AXPKip8u95bu0lvLZ6tK26aqfjkOL3y
+8ovam16kwuj1uuWKKfp411a99MIL+njrVu2JTlBCVJh27YnW5nXv67UVq7R3T5heeP5FbbMdnWk3
+jdacF1Zp15aPtGzFu/rgg/ft/nhR0UmZ2r1lnfLtteblKZO08Nl1eu2pCZo6d7G22AL08uI5+sUl
+f9b76zdrw5oPNHbMKI2+637tDA/XxrUf6d0PP9QHy9/W68s/VFJKspYtfVWrNu+22/rVDs1IHgA6
+9/dq0/OPa/Lk5+z1v0JZWTn2WM9SeUWNCvMCSk3NVGt7pwqy05WZV6LGuirl2lrz1rML9MTrm1SZ
+tVeTp8+1gatZ6SkpqqizvfnabN34uyv0xEtLtW7rZj02e6LmPveG3l3xptYvf0VX/vFmvbvpI028
+6re6etyjeufJ6fqn/7hK1W29CjYN/nMOtRE7ANQVxOn6i6/QKyvXKWHvZl09+kpdc9ONmjt7sq4Z
+c7ceXXifLv/zaD3w6Dw77iq9tClRyVuW6k93P6hPvZtwVPOn3qq7H3xWSxbN0GV22vvmPaoHHrpP
+d93yJ/3viy7WVWPGatTll+ji312pcbddrp/++8900eXXaOGLSzV72jj99lc/1W+uH6fbb75ao66/
+U0kFNWpraT6+8QcOAG7ju71+d3v6uRftrfbkd+K3fqiHH5ipOQ/O15JXXtIjzz+j5xZN0JjrbtND
+i57Q7NkzdNf0ydqdVaOjn4aGAAYAfzekAcD2VPa3VunWG0fr/agCe+T9RVEfPaVrbh2ne++boF//
++WrNWvCkJky/V3Menqr/84tLdMfkKRp19aW6b9ELioxYp3HX36gPYguUtuld/eKH/6qLrhyjm6/5
+d11+1e0ad8tt+tnP/lWXXjNWl/2/H+t/XjRKd950kf71J7/Qv/z8Yj2+5Cn9t7/6gf7jz/foucWL
+dOWo0XrytQ22B9s1+M9rXTgDQLuqsvfo9qum2l51lKaNna4JUyZo7J0TdNUNf9CoW+/Q9Cm3adbD
+D+mxedP161/+VJOnTNO0e+fo+msv0Z+uvk5zXlqpkqSdmjF2pm4dP06XjbrcFpA7NW/Og3YZd+qJ
++Q/o/178C42bOEU333aTfnfFlZo0+XpNmDBTM2ZO1m2TJumhKVfb/f9Xmv/087p30h267qYJKm7v
+0dIZ0/TKe/Hatfxh/fLSy3TXuOv1k3/6r/r96Ls057E5GvXbf9Pf/f3/0tRZs3WxvXbdMv5OXfyT
+/6Gf//5yXXfNjbr88l/od3b/3zbjIZU2tNtiFHq9HekDwOaXn9YD9zyiOyfdptGXj9HoK67Qw/Me
+0pixN+vmO+7SzIdmafqMyZpir88TJ43XLdMe1cKZ9lif+7qK4tfp93+4Xo8umqu7Jo7XxLkL1WiL
+46plz2r+U0v09rJndOl1N6mw5Yh3uxuKM7V44Tw9ZwPzvGl36dJf/Vp/uPxXtn7co/JgNwPA2QwA
+jTYANBbF6eZLbtCW+AzlxG3RH8eO14x7x2r6tImaMuF+3XHrn3Xd7VP0xFOP6FejrldMcZua82N1
+w01jtGrLdu3cvEZ33H6znluzW4/eM1rX3j5VjyyYo5vuul0z7rxGf/Vf/lpjJ8zSjVdcrF+Omap5
+0y/Vz376O/3015fqEhsoxt5yvX76w7/RP//2Bs1+aJJ+c9FlWr83R12drcc3/skDwPbt2709/36h
+oWCHzSKH9cjEmzT3mVc0+dbrdOXYWzXmpht0z8SbNWvmfN1/32RNvHe67p50q97dm2enP+JtGwYA
+fzfUXwG0d3Zp15pXNeHeB/TUk0/oo9UrNPPeezR1zmzNenCOFjz7sh6Y+4jeXPGWxt8+To89v1TP
+PrdI46fdp/fWf6THZ96rpetilblrva6/ZJSmLFqiZ5bM0pOPPqybJt6vVSte0R3j79U0e7zeev9C
+vfCkLZB/ukGjr71RM+bM0hW20NyzZKXyIlfrRz++SBk1bWoLnvpnvlAGAPd2b1tjhZ55bIbmzL5f
+T72xUo/MmqA/3nCzHl38n1qwYLbtDNyohx6eY8/d8br91hu1ZPFi3T9trubZjsXEqTP19tZolaXu
+1mNT5uuh/3xCcxc8qGdee1Ufv/WMrrxrjopy9unOW27RvCUvasHjj2nW/IV62rbtgocX6iHbOXjg
+wfs0feo4/ew3f1ZMQYUeuObXuv2RZTbGHdV7j8/T1BkP6/6HH9BMu49uvesO3T7mCl036hpddv0Y
+TRp3rS765aW6Z+Z9uubKP+jGm8dp7LWXavzkabpz7DhNuWea7p44Xf+57D3VNLWq6djvuEf6ALB9
+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
+/j8qcwX7y4dBxQAAAABJRU5ErkJggg==</Preview>
+  <Form>ijGX1Q9SGx8AACODCAAAAAAABADtWF1v6jgQfV9p/4OVh31KWwgfIbqAVFK6W124VIR2tftSmcQFb4ONHOcW
+9tfvOIE2l4/ihBb1SqtKqFFmPMdzzownbg7G/xBfRu1ff0GomT4guZyTluEtI0lm539SFvDn6Pya
+i1n6a6Jdr0x0T0REOWtVz0vqz0RuHMpYkBYjsRQ4NNFtPA6p/5UsR/yJsNbYtnHNr9XLTqVKSg3H
+QAzPIPIjrNfHlBnIn9IwEGBquJxJwcPISJAC1lvB50TI5crnMpbc83FIruiMMIUDTG0TlSvNi7Xp
+Idc+D4jRvoZIB33ckBImPfovOJStOgSq1eoHvdTSRrtPfcEj/iiRh1mEPCLoo4ka51ZtLk0UyWVI
+Wh0eBgeX62MxgSy1qyaqmEj9HnT5Br9Ge53gg+aexELe8ohKSKjRdmHPRHi+IOSw74gsYLNXo+7X
+s8u/74bds2HXG9wN3e6ZO+j1uu5oMNxeo/sdQqwW6HEcvGJ9UI/Ni8RgbX1Yr+6U+E8dvvhwzfoq
+0JgvlJje0u12nnrcx2l6y1UAYG2TuI/GbEwNp1St1QbEqGqYj/D4hgVkAbjKOuYJ3ZpQ7iLi8tkc
+9j0OifIcEgglKJsY7ZGIid4S9zSKceipgulg/8nlIRd7/JsXqVb0laNQnUI4EuIAh5XCorFKlZ1t
+bke/AIg0pIxoJznV2Rqivsbq0I50zDMaK/18nFlFOXPKDlBmfTxlOiEKU+b8fIyVizJWt+3TMKbT
+agsz1ngHxobUn56KNQGxijGXOQ9ScAqyRq5gB2Tl14NBUsMj24mBkOp2jvcxnt2dNuu2XTORsz1q
+vkW7rX18v4M+OrGUnH24NMZJmLt5gCW5YWoo5GJ5hSUeFy1xu9LQLPGUvv0ItMksKzJz1rAW9QmZ
+v+HZ/EuKD70ARAlCHGmOWJ99Sjup2m5mcy7kiHuu1y989DtlzWktq7JsZG11WaX8J0Qtn7pSXEhy
+pInsf0n9KKmu+qB2BQmgOikGCRX+CgBV6XzVZVW1GVy/b1nqqNP6KnxRltYn56uyEmwoH7iTi2vj
+wsIF3p/2JfchebtxgZFbnD0anWTyCiHOUVNXn7A4/8z1FwlD/qznM8NSArVdhoHtQJvhTM041VwH
+/jon2mVSsfI34J3WWZF5JASNkCCxd6eYTdTm19gedr0+VnRqZPhd0OCekucPVx6MK3gCwb5DsCGJ
+YJWcTfFSSQjqWIz4ZRAMAaPRvoYC1BFHxvcKEilJTnfmT5Nmwecm6nBoAzMT9cijNNGQTqY6xZC9
+DTRRXeta5/A18D5J70i2hu+Q4GDAwqV2za1PjYoD4Ozte4O3CmJnff7QdXkYz9gfgImIPo/hDEjb
+8I69Pey2PbY+TjsxLKjMWRArVa4FWUCK5YpSlqPT+o5Q4+sGc2gKElrLedWoPYl0k1FED8/nGj4A
+8/sMHCfVNmxXnV4vH6vH6Vw13lwyr1nal3zHinxzp/qCr1ZyzxTbV+tvjt4rbCgPuE+l/s3kHqyE
+zMP636j9H+afrN0bHwAA</Form>
   <Code><![CDATA[
 #region Control Helper Functions
+function Update-ListBox
+{
+<#
+	.SYNOPSIS
+		This functions helps you load items into a ListBox or CheckedListBox.
+	
+	.DESCRIPTION
+		Use this function to dynamically load items into the ListBox control.
+	
+	.PARAMETER ListBox
+		The ListBox control you want to add items to.
+	
+	.PARAMETER Items
+		The object or objects you wish to load into the ListBox's Items collection.
+	
+	.PARAMETER DisplayMember
+		Indicates the property to display for the items in this control.
+		
+	.PARAMETER ValueMember
+		Indicates the property to use for the value of the control.
+	
+	.PARAMETER Append
+		Adds the item(s) to the ListBox without clearing the Items collection.
+	
+	.EXAMPLE
+		Update-ListBox $ListBox1 "Red", "White", "Blue"
+	
+	.EXAMPLE
+		Update-ListBox $listBox1 "Red" -Append
+		Update-ListBox $listBox1 "White" -Append
+		Update-ListBox $listBox1 "Blue" -Append
+	
+	.EXAMPLE
+		Update-ListBox $listBox1 (Get-Process) "ProcessName"
+	
+	.NOTES
+		Additional information about the function.
+#>
+	
+	param
+	(
+		[Parameter(Mandatory = $true)]
+		[ValidateNotNull()]
+		[System.Windows.Forms.ListBox]
+		$ListBox,
+		[Parameter(Mandatory = $true)]
+		[ValidateNotNull()]
+		$Items,
+		[Parameter(Mandatory = $false)]
+		[string]$DisplayMember,
+		[Parameter(Mandatory = $false)]
+		[string]$ValueMember,
+		[switch]
+		$Append
+	)
+	
+	if (-not $Append)
+	{
+		$ListBox.Items.Clear()
+	}
+	
+	if ($Items -is [System.Windows.Forms.ListBox+ObjectCollection] -or $Items -is [System.Collections.ICollection])
+	{
+		$ListBox.Items.AddRange($Items)
+	}
+	elseif ($Items -is [System.Collections.IEnumerable])
+	{
+		$ListBox.BeginUpdate()
+		foreach ($obj in $Items)
+		{
+			$ListBox.Items.Add($obj)
+		}
+		$ListBox.EndUpdate()
+	}
+	else
+	{
+		$ListBox.Items.Add($Items)
+	}
+	
+	$ListBox.DisplayMember = $DisplayMember
+	$ListBox.ValueMember = $ValueMember
+}
+
 function Update-DataGridView
 {
 	<#
@@ -327,31 +524,391 @@ function ConvertTo-DataTable
 	return @(,$Table)	
 }
 #endregion
-
+################################################################################
+#########################   INIT LOAD ##########################################
+################################################################################
 $formMain_Load={
-	#TODO: Initialize Form Controls here
+	$Global:Now = Get-date
+	$Global:NewLine = "`r`n"
+	
+	$virtual_machine_object_All = @()
+	
+	
+	#$checkboxAuto.Checked=$true
+	
+	################functions ################
+	
+	Function global:AppendLog ([string]$Message)
+	{
+		$script:CurrentAction = $Message
+		$script:TraceLog += ((Get-Date).ToString() + "`t" + $Message + " `r`n")
+	}
+	
 	
 }
 
-$buttonExit_Click={
-	#TODO: Place custom script here
-	$formMain.Close()
+###############################################################################
+####################### COLLECT DATA ##########################################
+###############################################################################
+
+$buttonCollectInventory_Click= {
+	
+	
+	function Get-AzureInventory
+	{
+		
+		Param (
+			[String]$Global:subscription_id
+		)
+		
+		# Selecting the subscription
+		Select-AzureRmSubscription -Subscription $Global:subscription_id
+		
+		
+		
+		# Create a new directory with the subscription name
+		$path_to_store_inventory_csv_files = "E:\AzureInventory\" + $Global:subscription_id
+		
+		$richtextbox1.Text += "Fetching Artifacts from $Global:subscription_id" + $Global:NewLine
+		
+		# Fetch the Virtual Machines from the subscription
+		$azureVMDetails = get-azurermvm
+		
+		# Fetch the NIC details from the subscription
+		$azureNICDetails = Get-AzureRmNetworkInterface
+		
+		# Fetch the Storage Accounts from the subscription
+		$azureStorageAccountDetails = Get-AzureRmStorageAccount
+		
+		# Fetch the Virtual Networks from the subscription
+		$azureVirtualNetworkDetails = Get-AzureRmVirtualNetwork
+		
+		# Fetch the NSG rules from the subscription
+		$azureNSGDetails = Get-AzureRmNetworkSecurityGroup
+		
+		# Fetch the Azure load balancer details
+		$AzureLBList = Get-AzureRmLoadBalancer
+		
+		# Create a new directory with the subscription name
+		new-item $path_to_store_inventory_csv_files -ItemType Directory -Force
+		
+		# Change the directory location to store the CSV files
+		Set-Location -Path $path_to_store_inventory_csv_files
+		
+		
+		#####################################################################
+		#    Fetching Virtual Machine Details                               #
+		#####################################################################
+		
+		$richtextbox1.Text += "Fetching Virtual Machine Details" + $Global:NewLine
+		
+		$virtual_machine_object = $null
+		$virtual_machine_object = @()
+		
+		
+		# Iterating over the Virtual Machines under the subscription
+		
+		foreach ($azureVMDetails_Iterator in $azureVMDetails)
+		{
+			
+			# Fetching the satus
+			$vm_status = get-azurermvm -ResourceGroupName $azureVMDetails_Iterator.resourcegroupname -name $azureVMDetails_Iterator.name -Status
+			
+			#Fetching the private IP
+			foreach ($azureNICDetails_iterator in $azureNICDetails)
+			{
+				if ($azureNICDetails_iterator.Id -eq $azureVMDetails_Iterator.NetworkProfile.NetworkInterfaces.id)
+				{
+					#write-Host $vm.NetworkInterfaceIDs
+					$private_ip_address = $azureNICDetails_iterator.IpConfigurations.privateipaddress
+				}
+			}
+			
+			#Fetching data disk names
+			$data_disks = $azureVMDetails_Iterator.StorageProfile.DataDisks
+			$data_disk_name_list = ''
+        <#
+        if($data_disks.Count -eq 0){
+            $data_disk_name_list = "No Data Disk Attached"
+            #write-host $data_disk_name_list
+        }elseif($data_disks.Count -ge 1) {
+
+        #>
+			foreach ($data_disks_iterator in $data_disks)
+			{
+				$data_disk_name_list_temp = $data_disk_name_list + "; " + $data_disks_iterator.name
+				#Trimming the first three characters which contain --> " ; "
+				$data_disk_name_list = $data_disk_name_list_temp.Substring(2)
+				#write-host $data_disk_name_list
+			}
+			
+			#}
+			
+			
+			
+			# Fetching OS Details (Managed / un-managed)
+			
+			if ($azureVMDetails_Iterator.StorageProfile.OsDisk.manageddisk -eq $null)
+			{
+				# This is un-managed disk. It has VHD property
+				
+				$os_disk_details_unmanaged = $azureVMDetails_Iterator.StorageProfile.OsDisk.Vhd.Uri
+				$os_disk_details_managed = "This VM has un-managed OS Disk"
+				
+			}
+			else
+			{
+				
+				$os_disk_details_managed = $azureVMDetails_Iterator.StorageProfile.OsDisk.ManagedDisk.Id
+				$os_disk_details_unmanaged = "This VM has Managed OS Disk"
+			}
+			
+			$virtual_machine_object_temp = new-object PSObject
+			$virtual_machine_object_temp | add-member -membertype NoteProperty -name "SubScription" -Value $global:subscription_id
+			$virtual_machine_object_temp | add-member -membertype NoteProperty -name "ResourceGroupName" -Value $azureVMDetails_Iterator.ResourceGroupName
+			$virtual_machine_object_temp | add-member -membertype NoteProperty -name "VMName" -Value $azureVMDetails_Iterator.Name
+			$virtual_machine_object_temp | add-member -membertype NoteProperty -name "VMStatus" -Value $vm_status.Statuses[1].DisplayStatus
+			$virtual_machine_object_temp | add-member -membertype NoteProperty -name "Location" -Value $azureVMDetails_Iterator.Location
+			$virtual_machine_object_temp | add-member -membertype NoteProperty -name "VMSize" -Value $azureVMDetails_Iterator.HardwareProfile.VmSize
+			$virtual_machine_object_temp | add-member -membertype NoteProperty -name "OSDisk" -Value $azureVMDetails_Iterator.StorageProfile.OsDisk.OsType
+			$virtual_machine_object_temp | add-member -membertype NoteProperty -name "OSImageType" -Value $azureVMDetails_Iterator.StorageProfile.ImageReference.sku
+			$virtual_machine_object_temp | add-member -membertype NoteProperty -name "AdminUserName" -Value $azureVMDetails_Iterator.OSProfile.AdminUsername
+			$virtual_machine_object_temp | add-member -membertype NoteProperty -name "NICId" -Value $azureVMDetails_Iterator.NetworkProfile.NetworkInterfaces.id
+			$virtual_machine_object_temp | add-member -membertype NoteProperty -name "OSVersion" -Value $azureVMDetails_Iterator.StorageProfile.ImageReference.Sku
+			$virtual_machine_object_temp | add-member -membertype NoteProperty -name "PrivateIP" -Value $private_ip_address
+			$virtual_machine_object_temp | add-member -membertype NoteProperty -name "ManagedOSDiskURI" -Value $os_disk_details_managed
+			$virtual_machine_object_temp | add-member -membertype NoteProperty -name "UnManagedOSDiskURI" -Value $os_disk_details_unmanaged
+			$virtual_machine_object_temp | add-member -membertype NoteProperty -name "DataDiskNames" -Value $data_disk_name_list
+			
+			
+			$virtual_machine_object += $virtual_machine_object_temp
+			
+			$virtual_machine_object_All = $virtual_machine_object_temp
+		}
+		
+		Update-DataGridView -DataGridView $datagridviewResults -Item $virtual_machine_object_All -AutoSizeColumns DisplayedCells
+		
+		
+		$virtual_machine_object | Export-Csv "Virtual_Machine_details.csv" -NoTypeInformation -Force
+		
+		
+		
+		############################################################################
+		#    Fetching custom Network Security Groups Details                       #
+		############################################################################
+		
+		$richtextbox1.Text += "Fetching custom Network Security Groups Details" + $Global:NewLine
+		
+		$network_security_groups_object = $null
+		$network_security_groups_object = @()
+		
+		foreach ($azureNSGDetails_Iterator in $azureNSGDetails)
+		{
+			
+			
+			
+			$securityRulesPerNSG = $azureNSGDetails_Iterator.SecurityRules
+			if ($securityRulesPerNSG -eq $null)
+			{
+				continue
+			}
+			
+			foreach ($securityRulesPerNSG_Iterator in $securityRulesPerNSG)
+			{
+				
+				$network_security_groups_object_temp = new-object PSObject
+				
+				$network_security_groups_object_temp | add-member -MemberType NoteProperty -Name "Name" -Value $securityRulesPerNSG_Iterator.Name
+				$network_security_groups_object_temp | add-member -MemberType NoteProperty -Name "Priority" -Value $securityRulesPerNSG_Iterator.Priority
+				$network_security_groups_object_temp | add-member -MemberType NoteProperty -Name "Protocol" -Value $securityRulesPerNSG_Iterator.Protocol
+				$network_security_groups_object_temp | add-member -MemberType NoteProperty -Name "Direction" -Value $securityRulesPerNSG_Iterator.Direction
+				$network_security_groups_object_temp | add-member -MemberType NoteProperty -Name "SourcePortRange" -Value ($securityRulesPerNSG_Iterator | Select-Object @{ Name = "SourcePortRange"; Expression = { $_.SourcePortRange } })
+				$network_security_groups_object_temp | add-member -MemberType NoteProperty -Name "DestinationPortRange" -Value ($securityRulesPerNSG_Iterator | Select-Object @{ Name = "DestinationPortRange"; Expression = { $_.DestinationPortRange } })
+				$network_security_groups_object_temp | add-member -MemberType NoteProperty -Name "SourceAddressPrefix" -Value ($securityRulesPerNSG_Iterator | Select-Object @{ Name = "SourceAddressPrefix"; Expression = { $_.SourceAddressPrefix } })
+				$network_security_groups_object_temp | add-member -MemberType NoteProperty -Name "DestinationAddressPrefix" -Value ($securityRulesPerNSG_Iterator | Select-Object @{ Name = "DestinationAddressPrefix"; Expression = { $_.DestinationAddressPrefix } })
+				$network_security_groups_object_temp | add-member -MemberType NoteProperty -Name "Access" -Value $securityRulesPerNSG_Iterator.Access
+				
+				$network_security_groups_object += $network_security_groups_object_temp
+			}
+			
+			# Setting the pointer to the next row and first column
+			
+			
+		}
+		
+		if ($network_security_groups_object -ne $null)
+		{
+			$network_security_groups_object | Export-Csv "nsg_custom_rules_details.csv" -NoTypeInformation -Force
+		}
+		
+		
+		
+		
+		#####################################################################
+		#    Fetching Storage Account Details                               #
+		#####################################################################
+		
+		$richtextbox1.Text += "Fetching Storage Account Details" + $Global:NewLine
+		
+		
+		$storage_account_object = $null
+		$storage_account_object = @()
+		
+		foreach ($azureStorageAccountDetails_Iterator in $azureStorageAccountDetails)
+		{
+			
+			# Populating the cells
+			
+			$storage_account_object_temp = new-object PSObject
+			
+			$storage_account_object_temp | add-member -MemberType NoteProperty -Name "ResourceGroupName" -Value $azureStorageAccountDetails_Iterator.ResourceGroupName
+			$storage_account_object_temp | add-member -MemberType NoteProperty -Name "StorageAccountName" -Value $azureStorageAccountDetails_Iterator.StorageAccountName
+			$storage_account_object_temp | add-member -MemberType NoteProperty -Name "Location" -Value $azureStorageAccountDetails_Iterator.Location
+			$storage_account_object_temp | add-member -MemberType NoteProperty -Name "StorageTier" -Value $azureStorageAccountDetails_Iterator.Sku.Tier
+			$storage_account_object_temp | add-member -MemberType NoteProperty -Name "ReplicationType" -Value $azureStorageAccountDetails_Iterator.Sku.Name
+			
+			
+			
+			# Setting the pointer to the next row and first column
+			$storage_account_object += $storage_account_object_temp
+		}
+		
+		$storage_account_object | Export-Csv "Storage_Account_Details.csv" -NoTypeInformation -Force
+		
+		
+		
+		#####################################################################
+		#    Fetching Virtual Network Details                               #
+		#####################################################################
+		$richtextbox1.Text += "Fetching Virtual Network Details" + $Global:NewLine
+		
+		$virtual_network_object = $null
+		$virtual_network_object = @()
+		
+		foreach ($azureVirtualNetworkDetails_Iterator in $azureVirtualNetworkDetails)
+		{
+			
+			$virtual_network_object_temp = New-Object PSObject
+			
+			# Populating the cells
+			
+			$virtual_network_object_temp | Add-Member -MemberType NoteProperty -Name "ResourceGroupName" -Value $azureVirtualNetworkDetails_Iterator.ResourceGroupName
+			$virtual_network_object_temp | Add-Member -MemberType NoteProperty -Name "Location" -Value $azureVirtualNetworkDetails_Iterator.Location
+			$virtual_network_object_temp | Add-Member -MemberType NoteProperty -Name "VNETName" -Value $azureVirtualNetworkDetails_Iterator.Name
+			#$virtual_network_object_temp | Add-Member -MemberType NoteProperty -Name "AddressSpace" -Value $azureVirtualNetworkDetails_Iterator.AddressSpace.AddressPrefixes
+			
+			
+			
+			#$VirtualNetworkWorksheet.Cells.Item($row_counter,$column_counter++) = $azureVirtualNetworkDetails[$vnet_iterator].DhcpOptions.ToString()
+			
+			$subnetPerVNET = $azureVirtualNetworkDetails_Iterator.Subnets
+			$subnet_count = 1
+			foreach ($subnetPerVNET_Iterator in $subnetPerVNET)
+			{
+				$subnet_name = "Subnet" + $subnet_count
+				$subnet_address_space = "SubnetAddressSpace" + $subnet_count
+				$virtual_network_object_temp | Add-Member -MemberType NoteProperty -Name $subnet_name -Value $subnetPerVNET_Iterator.Name
+				$virtual_network_object_temp | Add-Member -MemberType NoteProperty -Name $subnet_address_space -Value $subnetPerVNET_Iterator.AddressPrefix
+				$subnet_count += 1
+				#$virtual_network_object += $virtual_network_object_temp
+				
+			}
+			
+			# Setting the pointer to the next row and first column
+			$virtual_network_object += $virtual_network_object_temp
+		}
+		
+		$virtual_network_object | Export-Csv "Virtual_networks_details.csv" -NoTypeInformation -Force
+		
+		
+		
+		#####################################################################
+		#    Fetching External Load Balancer Details                        #
+		#####################################################################
+		$richtextbox1.Text += "Fetching External Load Balancer Details" + $Global:NewLine
+	
+		
+		$azure_load_balancer_object = $null
+		$azure_load_balancer_object = @()
+		
+		foreach ($AzureLBList_Iterator in $AzureLBList)
+		{
+			
+			# Populating the cells
+			
+			$azure_load_balancer_object_temp = new-object PSObject
+			
+			$azure_load_balancer_object_temp | add-member -MemberType NoteProperty -Name "ResourceGroupName" -Value $AzureLBList_Iterator.ResourceGroupName
+			$azure_load_balancer_object_temp | add-member -MemberType NoteProperty -Name "Name" -Value $AzureLBList_Iterator.Name
+			$azure_load_balancer_object_temp | add-member -MemberType NoteProperty -Name "Location" -Value $AzureLBList_Iterator.Location
+			$azure_load_balancer_object_temp | add-member -MemberType NoteProperty -Name "FrontendIpConfigurationsName" -Value $AzureLBList_Iterator.FrontendIpConfigurations.name
+			$azure_load_balancer_object_temp | add-member -MemberType NoteProperty -Name "BackendAddressPoolsName" -Value $AzureLBList_Iterator.BackendAddressPools.name
+			
+			
+			# Back End VM List
+			$AzureLBBackendPoolVMs = $AzureLBList_Iterator.BackendAddressPools.BackendIpConfigurations
+			
+			$aa
+			# Proceed only if $ExternalLBBackendPoolVMs array has data.
+			if ($AzureLBBackendPoolVMs.count -ne $NULL)
+			{
+				
+				$AzureLBBackendPoolVMsID_count = 1
+				foreach ($AzureLBBackendPoolVMs_Iterator in $AzureLBBackendPoolVMs)
+				{
+					#$column_counter = 6
+					
+					if ($null -eq $AzureLBBackendPoolVMs_Iterator)
+					{
+						
+						continue
+						
+					}
+					
+					$AzureLBBackendPoolVMsID_name = "AzureLBBackendPoolVMsID" + $AzureLBBackendPoolVMsID_count
+					$azure_load_balancer_object_temp | add-member -MemberType NoteProperty -Name $AzureLBBackendPoolVMsID_name -Value $AzureLBBackendPoolVMs_Iterator.id
+					$AzureLBBackendPoolVMsID_count += 1
+				}
+				
+			}
+			
+			$azure_load_balancer_object += $azure_load_balancer_object_temp
+			
+		}
+		
+		$azure_load_balancer_object | Export-Csv "Azure_Load_Balancer_details.csv" -NoTypeInformation -Force
+		
+	}
+	
+	###########################################################
+	###############  COLLECTION   #############################
+	###########################################################
+	
+	$working_directory = "E:\AzureInventory"
+	
+	
+	new-item $working_directory -ItemType Directory -Force
+	
+	$listbox1.Text = $Global:subscription_list
+	$richtextbox1.Text = "Fetching the IaaS inventory list for each subscription" + $Global:NewLine
+	
+	
+	
+	
+	foreach ($subscription_list_iterator in $Global:subscription_list)
+	{
+		$Global:subscription_id = $subscription_list_iterator.id
+		$subscription_name = $subscription_list_iterator.name
+		
+		if ($subscription_list_iterator.State -ne "Disabled")
+		{
+			Get-AzureInventory($Global:subscription_id)
+		}
+		
+	}
+	
 }
 
-$buttonLoad_Click= {
-	#TODO: Place custom script here
-	#	---------------------------------
-	#	Sample Code to Load Grid
-	#	---------------------------------
-	#	$processes = Get-WmiObject Win32_Process -Namespace "Root\CIMV2"
-	#	Update-DataGridView -DataGridView $datagridviewResults -Item $processes -AutoSizeColumns DisplayedCells
-	#	---------------------------------
-	#	Sample Code to Load Sortable Data
-	#	---------------------------------
-	# 	$processes = Get-WmiObject Win32_Process -Namespace "Root\CIMV2"
-	#	$table = ConvertTo-DataTable -InputObject $processes -FilterWMIProperties
-	#	Update-DataGridView -DataGridView $datagridviewResults -Item $table -AutoSizeColumns DisplayedCells
-}
 
 $datagridviewResults_ColumnHeaderMouseClick=[System.Windows.Forms.DataGridViewCellMouseEventHandler]{
 #Event Argument: $_ = [System.Windows.Forms.DataGridViewCellMouseEventArgs]
@@ -368,7 +925,71 @@ $datagridviewResults_ColumnHeaderMouseClick=[System.Windows.Forms.DataGridViewCe
 		$datagridviewResults.Sort($datagridviewResults.Columns[$_.ColumnIndex], $direction)
 	}
 }
-]]></Code>
-  <Mode>0</Mode>
+
+$buttonEnterCredentials_Click = {
+	
+	
+	
+	
+	function Invoke-GetAzureInventoryFunction
+	{
+		
+		# Sign into Azure Portal
+		login-azurermaccount
+		
+		# Fetching subscription list
+		$Global:subscription_list = get-azurermsubscription
+		Load-ListBox $listbox1 $Global:subscription_list
+		
+		
+	}
+	
+	if (!$checkboxAuto.Checked)
+	{
+		Invoke-GetAzureInventoryFunction
+	}
+	else
+	{   #######################################################################################################################
+		### Create an APP - runOnce
+		
+		######################################################################################################################
+		
+		
+		
+		
+		
+		read-host -assecurestring | convertfrom-securestring | out-file E:\AzureInventory\mysecurestring.txt
+		
+		$userId = "applicationId@anielhobbsdtekitinnovation.onmicrosoft.com"
+		$password = get-content -Path "E:\AzureInventory\mysecurestring.txt" | ConvertTo-SecureString
+		
+		#Set the powershell credential object
+		$cred = New-Object -TypeName System.Management.Automation.PSCredential($userId, $password)
+		
+		#log On To Azure Account
+		
+		Login-AzureRmAccount -Credential $cred -TenantId "92832cfc-349a-4b12-af77-765b6f10b51f"
+		
+		# Fetching subscription list
+		$Global:subscription_list = get-azurermsubscription
+		
+		
+		
+		#https://social.technet.microsoft.com/wiki/contents/articles/40062.automating-azure-login-for-powershell-scripts-using-service-principal.aspx	
+	}
+	
+}
+
+
+$listbox1_SelectedIndexChanged={
+	
+}
+
+
+$buttonExit_Click = {
+	#TODO: Place custom script here
+	$formMain.Close()
+}]]></Code>
+  <Mode>1</Mode>
   <Assemblies />
 </File>
