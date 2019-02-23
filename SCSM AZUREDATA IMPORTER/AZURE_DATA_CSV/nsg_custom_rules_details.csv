@@ -1,0 +1,2 @@
+"Name","Priority","Protocol","Direction","SourcePortRange","DestinationPortRange","SourceAddressPrefix","DestinationAddressPrefix","Access"
+"default-allow-rdp","1000","TCP","Inbound","@{SourcePortRange=*}","@{DestinationPortRange=3389}","@{SourceAddressPrefix=*}","@{DestinationAddressPrefix=*}","Allow"

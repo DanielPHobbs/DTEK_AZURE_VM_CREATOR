@@ -1,0 +1,8 @@
+"ResourceGroupName","StorageAccountName","Location","StorageTier","ReplicationType"
+"dteksvraccessrg1","dteksvraccessrg1diag714","westeurope","Standard","StandardLRS"
+"DTEKSVRAccessRG1","dteksvraccessrg1diag972","westeurope","Standard","StandardLRS"
+"DTEKSVRAccessRG1","dteksvraccessrg1diag433","westeurope","Standard","StandardLRS"
+"Azure-Vm-securePassword","g3i44wustvgg6sawinvm","westeurope","Standard","StandardLRS"
+"cloud-shell-storage-westeurope","csbe8930b88433cx4dcexa2a","westeurope","Standard","StandardLRS"
+"securitydata","e82063westeurope","westeurope","Standard","StandardLRS"
+"DTEKSVRAccessRG1","dteksvraccessrg1diag730","westeurope","Standard","StandardLRS"
