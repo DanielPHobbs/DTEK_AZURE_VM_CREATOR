@@ -1,6 +1,5 @@
 ﻿<File version="3.1">
   <FileID>5d4ffab2-a0b9-42fd-a4cc-3ee7484bff51</FileID>
-  <LastExport>131955993034065433</LastExport>
   <Preview>iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAEGmSURBVHhe7b0JlFXlnbdba90vX/rrtLf7u+v2
 d5N7b/dNd6c7Q3fSMTEmsROnxBEHFBUFBARkEpFJBAURcURQEJwYFGSeKaaCGqCKmud5nueJqmIo
@@ -676,37 +675,28 @@ $buttonCollectInventory_Click= {
 		# Create a new directory with the subscription name
 		$path_to_store_inventory_csv_files = "E:\AzureInventory\" + $Global:subscription_id
 		
-		$richtextbox1.Text += "Fetching Inventory from $Global:subscription_name" + $Global:NewLine
+		$richtextbox1.Text += "Fetching Artifacts from $Global:subscription_id" + $Global:NewLine
 		
 		Try
 		{
-			# Fetch the RG details from the subscription
-			$richtextbox1.Text += "Loading resource groups" + $Global:NewLine
-			start-job{ $azureRGDetails = Get-AzureRmResourceGroup }
-			
-			# Fetch the NIC details from the subscription
-			$richtextbox1.Text += "Loading NIC details" + $Global:NewLine
-			start-job{ $azureNICDetails = Get-AzureRmNetworkInterface }
-			
-			# Fetch the Storage Accounts from the subscription
-			start-job{ $azureStorageAccountDetails = Get-AzureRmStorageAccount }
-			
-			# Fetch the Virtual Networks from the subscription
-			start-job{ $azureVirtualNetworkDetails = Get-AzureRmVirtualNetwork }
-			
-			# Fetch the NSG rules from the subscription
-			start-job{ $azureNSGDetails = Get-AzureRmNetworkSecurityGroup }
-			
-			# Fetch the Azure load balancer details
-			start-job{ $AzureLBList = Get-AzureRmLoadBalancer }
 			
 			# Fetch the Virtual Machines from the subscription
-			$jobScript = { get-azurermvm }
-			Start-Job -ScriptBlock $jobScript -Name 'GetVMAzure1'
-			Wait-Job -Name 'GetVMAzure1'
-			[array]$azureVMDetails = (Get-Job -Name 'GetVMAzure1' | Receive-Job);
+			$azureVMDetails = get-azurermvm | Out-Null
 			
+			# Fetch the NIC details from the subscription
+			$azureNICDetails = Get-AzureRmNetworkInterface
 			
+			# Fetch the Storage Accounts from the subscription
+			$azureStorageAccountDetails = Get-AzureRmStorageAccount
+			
+			# Fetch the Virtual Networks from the subscription
+			$azureVirtualNetworkDetails = Get-AzureRmVirtualNetwork
+			
+			# Fetch the NSG rules from the subscription
+			$azureNSGDetails = Get-AzureRmNetworkSecurityGroup
+			
+			# Fetch the Azure load balancer details
+			$AzureLBList = Get-AzureRmLoadBalancer
 		}
 		catch
 		{
@@ -1025,7 +1015,7 @@ $buttonCollectInventory_Click= {
 	foreach ($subscription_list_iterator in $Global:subscription_list)
 	{
 		$Global:subscription_id = $subscription_list_iterator.id
-		$Global:subscription_name = $subscription_list_iterator.name
+		$subscription_name = $subscription_list_iterator.name
 		Update-ListBox $listbox1 $subscription_name
 		
 		
