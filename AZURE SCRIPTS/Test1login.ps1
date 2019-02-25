@@ -28,3 +28,13 @@ Start-Job -ScriptBlock $jobScript -Name GetVMAzure1
 Wait-Job -Name GetVMAzure1
 [array]$azJobResults = (Get-Job -Name 'GetVMAzure1' | Receive-Job);
 $azJobResults
+
+#$applicationId = "02e79480-acfb-4284-ac9e-7caaa8b244e8";
+#$securePassword = "z5KMwA3DmvoeeSCvzoocvq5pHi78gsFR+0iKoSDvHZk=" | ConvertTo-SecureString -AsPlainText -Force
+
+$applicationId = "042af287-6486-4067-8324-f60174fce5b4";
+$securePassword = "9G9nVmBV3oW2oATHvaOPhgyosU0Qb7UCKnArwWUOBwg=" | ConvertTo-SecureString -AsPlainText -Force
+
+
+$credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $applicationId, $securePassword
+Connect-AzureRmAccount -ServicePrincipal -Credential $credential -TenantId "92832cfc-349a-4b12-af77-765b6f10b51f"

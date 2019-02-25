@@ -682,29 +682,27 @@ $buttonCollectInventory_Click= {
 		{
 			# Fetch the RG details from the subscription
 			$richtextbox1.Text += "Loading resource groups" + $Global:NewLine
-			start-job{ $azureRGDetails = Get-AzureRmResourceGroup }
+			$azureRGDetails = Get-AzureRmResourceGroup 
 			
 			# Fetch the NIC details from the subscription
 			$richtextbox1.Text += "Loading NIC details" + $Global:NewLine
-			start-job{ $azureNICDetails = Get-AzureRmNetworkInterface }
+			 $azureNICDetails = Get-AzureRmNetworkInterface 
 			
 			# Fetch the Storage Accounts from the subscription
-			start-job{ $azureStorageAccountDetails = Get-AzureRmStorageAccount }
+			 $azureStorageAccountDetails = Get-AzureRmStorageAccount 
 			
 			# Fetch the Virtual Networks from the subscription
-			start-job{ $azureVirtualNetworkDetails = Get-AzureRmVirtualNetwork }
+			$azureVirtualNetworkDetails = Get-AzureRmVirtualNetwork 
 			
 			# Fetch the NSG rules from the subscription
-			start-job{ $azureNSGDetails = Get-AzureRmNetworkSecurityGroup }
+			$azureNSGDetails = Get-AzureRmNetworkSecurityGroup 
 			
 			# Fetch the Azure load balancer details
-			start-job{ $AzureLBList = Get-AzureRmLoadBalancer }
+			 $AzureLBList = Get-AzureRmLoadBalancer 
 			
 			# Fetch the Virtual Machines from the subscription
-			$jobScript = { get-azurermvm }
-			Start-Job -ScriptBlock $jobScript -Name 'GetVMAzure1'
-			Wait-Job -Name 'GetVMAzure1'
-			[array]$azureVMDetails = (Get-Job -Name 'GetVMAzure1' | Receive-Job);
+			$azureVMDetails = get-azurermvm 
+			
 			
 			
 		}
@@ -1080,15 +1078,32 @@ $buttonAuthenticate_Click = {
 		### TO-DO	Create a certificate based sign on 
 		######################################################################################################################
 		
+		$basePath = "E:\GIT-LOCAL-REPOSITORIES\DTEK_AZURE_VM_CREATOR\DTEK_AZURE_VM_CREATOR\CREDENTIALS"
+		$isAuthed = Test-Path $basePath"\_profile.json"
+		$TenantId ="92832cfc-349a-4b12-af77-765b6f10b51f"
+		if (!$isAuthed)
+		{
+			Login-AzureRmAccount -TenantId $TenantId
+			#mkdir $basePath
+			$Subscriptions = Get-AzureRmSubscription 
+			foreach ($Subscription in $Subscriptions)
+			{
+				
+				[String]$SubscriptionName= $Subscription.name
+				set-azureRMcontext -Name $SubscriptionName
+				Save-AzureRMContext -Path "$basePath\$SubscriptionName.json" -Force
+			}
+		}
+		else
+		{
+			Import-AzureRmContext -Path $basePath"_profile.json"
+		}
 		
-		$applicationId = "02e79480-acfb-4284-ac9e-7caaa8b244e8";
-		$securePassword = "z5KMwA3DmvoeeSCvzoocvq5pHi78gsFR+0iKoSDvHZk=" | ConvertTo-SecureString -AsPlainText -Force
-		$credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $applicationId, $securePassword
-		Connect-AzureRmAccount -ServicePrincipal -Credential $credential -TenantId "92832cfc-349a-4b12-af77-765b6f10b51f"
 		
 		# Fetching subscription list
+		
 		$Global:subscription_list = get-azurermsubscription
-		$richtextbox1.Text = "Authenticated using Service Principal (ReadOnly)" + $Global:NewLine
+		$richtextbox1.Text = "Authenticated" + $Global:NewLine
 		Update-ListBox $listbox1 $Global:subscription_list
 		
 		
