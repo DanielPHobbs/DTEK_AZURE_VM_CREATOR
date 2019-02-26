@@ -10,18 +10,24 @@
 	.DESCRIPTION
 		A description of the file.
 #>
-$basePath = "E:\GIT-LOCAL-REPOSITORIES\DTEK_AZURE_VM_CREATOR\DTEK_AZURE_VM_CREATOR\CREDENTIALS\"
-$isAuthed = Test-Path $basePath"_profile.json"
+$basePath = "E:\GIT-LOCAL-REPOSITORIES\DTEK_AZURE_VM_CREATOR\DTEK_AZURE_VM_CREATOR\CREDENTIALS"
+$isAuthed = Test-Path $basePath"\_profile.json"
+$TenantId = "92832cfc-349a-4b12-af77-765b6f10b51f"
 if (!$isAuthed)
 {
-	Login-AzureRmAccount
+	Login-AzureRmAccount -TenantId $TenantId
 	
-	#mkdir $basePath
-	Save-AzureRmContext -Path $basePath"_profile.json" -Force
+	$Subscriptions = Get-AzureRmSubscription
+	foreach ($Subscription in $Subscriptions)
+	{
+		
+		[String]$SubscriptionName = $Subscription.name
+		$SubscriptionName
+		set-azureRMcontext -Name $SubscriptionName
+		Save-AzureRMContext -Path "$basePath\$SubscriptionName.json" -Force
+	}
 }
 else
 {
 	Import-AzureRmContext -Path $basePath"_profile.json"
 }
-
- Get-AzureRmSubscription
