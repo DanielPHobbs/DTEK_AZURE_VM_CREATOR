@@ -1,5 +1,6 @@
 ﻿<File version="3.1">
   <FileID>5d4ffab2-a0b9-42fd-a4cc-3ee7484bff51</FileID>
+  <LastExport>131955993034065433</LastExport>
   <Preview>iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAEGmSURBVHhe7b0JlFXlnbdba90vX/rrtLf7u+v2
 d5N7b/dNd6c7Q3fSMTEmsROnxBEHFBUFBARkEpFJBAURcURQEJwYFGSeKaaCGqCKmud5nueJqmIo
@@ -627,6 +628,9 @@ $formMain_Load={
 	$Global:storage_account_object_All = @()
 	$Global:network_security_groups_object_All = @()
 	
+	$Global:working_directory = "D:\AzureInventory"
+	
+	
 	<#
 	####### Get latest AzureRM module - remove all old 
 	
@@ -668,35 +672,42 @@ $buttonCollectInventory_Click= {
 		)
 		
 		# Selecting the subscription
-		Select-AzureRmSubscription -Subscription $Global:subscription_id
+		Select-AzSubscription -Subscription $Global:subscription_id
 		
 		
 		
 		# Create a new directory with the subscription name
-		$path_to_store_inventory_csv_files = "E:\AzureInventory\" + $Global:subscription_id
+		$path_to_store_inventory_csv_files = "D:\AzureInventory\" + $Global:subscription_id
 		
-		$richtextbox1.Text += "Fetching Artifacts from $Global:subscription_id" + $Global:NewLine
+		$richtextbox1.Text += "Fetching Inventory from $Global:subscription_name" + $Global:NewLine
 		
 		Try
 		{
-			
-			# Fetch the Virtual Machines from the subscription
-			$azureVMDetails = get-azurermvm | Out-Null
+			# Fetch the RG details from the subscription
+			$richtextbox1.Text += "Loading resource groups" + $Global:NewLine
+			$azureRGDetails = Get-AzResourceGroup 
 			
 			# Fetch the NIC details from the subscription
-			$azureNICDetails = Get-AzureRmNetworkInterface
+			$richtextbox1.Text += "Loading NIC details" + $Global:NewLine
+			 $azureNICDetails = Get-AzNetworkInterface 
 			
 			# Fetch the Storage Accounts from the subscription
-			$azureStorageAccountDetails = Get-AzureRmStorageAccount
+			 $azureStorageAccountDetails = Get-AzStorageAccount 
 			
 			# Fetch the Virtual Networks from the subscription
-			$azureVirtualNetworkDetails = Get-AzureRmVirtualNetwork
+			$azureVirtualNetworkDetails = Get-AzVirtualNetwork 
 			
 			# Fetch the NSG rules from the subscription
-			$azureNSGDetails = Get-AzureRmNetworkSecurityGroup
+			$azureNSGDetails = Get-AzNetworkSecurityGroup 
 			
 			# Fetch the Azure load balancer details
-			$AzureLBList = Get-AzureRmLoadBalancer
+			 $AzureLBList = Get-AzLoadBalancer 
+			
+			# Fetch the Virtual Machines from the subscription
+			$azureVMDetails = get-azvm 
+			
+			
+			
 		}
 		catch
 		{
@@ -730,7 +741,7 @@ $buttonCollectInventory_Click= {
 		{
 			
 			# Fetching the satus
-			$vm_status = get-azurermvm -ResourceGroupName $azureVMDetails_Iterator.resourcegroupname -name $azureVMDetails_Iterator.name -Status
+			$vm_status = get-azvm -ResourceGroupName $azureVMDetails_Iterator.resourcegroupname -name $azureVMDetails_Iterator.name -Status
 			
 			#Fetching the private IP
 			foreach ($azureNICDetails_iterator in $azureNICDetails)
@@ -1005,9 +1016,9 @@ $buttonCollectInventory_Click= {
 	###############  COLLECTION   #############################
 	###########################################################
 	
-	$working_directory = "E:\AzureInventory"
 	
-	new-item $working_directory -ItemType Directory -Force
+	
+	new-item $Global:working_directory -ItemType Directory -Force
 	
 	
 	$richtextbox1.Text = "Fetching the IaaS inventory list for each subscription" + $Global:NewLine
@@ -1015,7 +1026,7 @@ $buttonCollectInventory_Click= {
 	foreach ($subscription_list_iterator in $Global:subscription_list)
 	{
 		$Global:subscription_id = $subscription_list_iterator.id
-		$subscription_name = $subscription_list_iterator.name
+		$Global:subscription_name = $subscription_list_iterator.name
 		Update-ListBox $listbox1 $subscription_name
 		
 		
@@ -1051,7 +1062,7 @@ $buttonAuthenticate_Click = {
 	{
 		
 		# Sign into Azure Portal
-		login-azurermaccount
+		Connect-AzAccount
 		
 		# Fetching subscription list
 		$Global:subscription_list = get-azurermsubscription
@@ -1070,15 +1081,19 @@ $buttonAuthenticate_Click = {
 		### TO-DO	Create a certificate based sign on 
 		######################################################################################################################
 		
+		$applicationId = "042af287-6486-4067-8324-f60174fce5b4";
+		$securePassword = "9G9nVmBV3oW2oATHvaOPhgyosU0Qb7UCKnArwWUOBwg=" | ConvertTo-SecureString -AsPlainText -Force
 		
-		$applicationId = "02e79480-acfb-4284-ac9e-7caaa8b244e8";
-		$securePassword = "z5KMwA3DmvoeeSCvzoocvq5pHi78gsFR+0iKoSDvHZk=" | ConvertTo-SecureString -AsPlainText -Force
+		
 		$credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $applicationId, $securePassword
-		Connect-AzureRmAccount -ServicePrincipal -Credential $credential -TenantId "92832cfc-349a-4b12-af77-765b6f10b51f"
+		Connect-AzAccount -ServicePrincipal -Credential $credential -TenantId "92832cfc-349a-4b12-af77-765b6f10b51f"
+		
+		
 		
 		# Fetching subscription list
-		$Global:subscription_list = get-azurermsubscription
-		$richtextbox1.Text = "Authenticated using Service Principal (ReadOnly)" + $Global:NewLine
+		
+		$Global:subscription_list = get-azsubscription
+		$richtextbox1.Text = "Authenticated" + $Global:NewLine
 		Update-ListBox $listbox1 $Global:subscription_list
 		
 		

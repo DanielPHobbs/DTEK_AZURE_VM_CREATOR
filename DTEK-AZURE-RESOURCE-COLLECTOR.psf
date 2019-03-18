@@ -628,6 +628,9 @@ $formMain_Load={
 	$Global:storage_account_object_All = @()
 	$Global:network_security_groups_object_All = @()
 	
+	$Global:working_directory = "D:\AzureInventory"
+	
+	
 	<#
 	####### Get latest AzureRM module - remove all old 
 	
@@ -669,12 +672,12 @@ $buttonCollectInventory_Click= {
 		)
 		
 		# Selecting the subscription
-		Select-AzureRmSubscription -Subscription $Global:subscription_id
+		Select-AzSubscription -Subscription $Global:subscription_id
 		
 		
 		
 		# Create a new directory with the subscription name
-		$path_to_store_inventory_csv_files = "E:\AzureInventory\" + $Global:subscription_id
+		$path_to_store_inventory_csv_files = "D:\AzureInventory\" + $Global:subscription_id
 		
 		$richtextbox1.Text += "Fetching Inventory from $Global:subscription_name" + $Global:NewLine
 		
@@ -682,26 +685,26 @@ $buttonCollectInventory_Click= {
 		{
 			# Fetch the RG details from the subscription
 			$richtextbox1.Text += "Loading resource groups" + $Global:NewLine
-			$azureRGDetails = Get-AzureRmResourceGroup 
+			$azureRGDetails = Get-AzResourceGroup 
 			
 			# Fetch the NIC details from the subscription
 			$richtextbox1.Text += "Loading NIC details" + $Global:NewLine
-			 $azureNICDetails = Get-AzureRmNetworkInterface 
+			 $azureNICDetails = Get-AzNetworkInterface 
 			
 			# Fetch the Storage Accounts from the subscription
-			 $azureStorageAccountDetails = Get-AzureRmStorageAccount 
+			 $azureStorageAccountDetails = Get-AzStorageAccount 
 			
 			# Fetch the Virtual Networks from the subscription
-			$azureVirtualNetworkDetails = Get-AzureRmVirtualNetwork 
+			$azureVirtualNetworkDetails = Get-AzVirtualNetwork 
 			
 			# Fetch the NSG rules from the subscription
-			$azureNSGDetails = Get-AzureRmNetworkSecurityGroup 
+			$azureNSGDetails = Get-AzNetworkSecurityGroup 
 			
 			# Fetch the Azure load balancer details
-			 $AzureLBList = Get-AzureRmLoadBalancer 
+			 $AzureLBList = Get-AzLoadBalancer 
 			
 			# Fetch the Virtual Machines from the subscription
-			$azureVMDetails = get-azurermvm 
+			$azureVMDetails = get-azvm 
 			
 			
 			
@@ -738,7 +741,7 @@ $buttonCollectInventory_Click= {
 		{
 			
 			# Fetching the satus
-			$vm_status = get-azurermvm -ResourceGroupName $azureVMDetails_Iterator.resourcegroupname -name $azureVMDetails_Iterator.name -Status
+			$vm_status = get-azvm -ResourceGroupName $azureVMDetails_Iterator.resourcegroupname -name $azureVMDetails_Iterator.name -Status
 			
 			#Fetching the private IP
 			foreach ($azureNICDetails_iterator in $azureNICDetails)
@@ -1013,9 +1016,9 @@ $buttonCollectInventory_Click= {
 	###############  COLLECTION   #############################
 	###########################################################
 	
-	$working_directory = "E:\AzureInventory"
 	
-	new-item $working_directory -ItemType Directory -Force
+	
+	new-item $Global:working_directory -ItemType Directory -Force
 	
 	
 	$richtextbox1.Text = "Fetching the IaaS inventory list for each subscription" + $Global:NewLine
@@ -1059,7 +1062,7 @@ $buttonAuthenticate_Click = {
 	{
 		
 		# Sign into Azure Portal
-		login-azurermaccount
+		Connect-AzAccount
 		
 		# Fetching subscription list
 		$Global:subscription_list = get-azurermsubscription
@@ -1078,31 +1081,18 @@ $buttonAuthenticate_Click = {
 		### TO-DO	Create a certificate based sign on 
 		######################################################################################################################
 		
-		$basePath = "E:\GIT-LOCAL-REPOSITORIES\DTEK_AZURE_VM_CREATOR\DTEK_AZURE_VM_CREATOR\CREDENTIALS"
-		$isAuthed = Test-Path $basePath"\_profile.json"
-		$TenantId ="92832cfc-349a-4b12-af77-765b6f10b51f"
-		if (!$isAuthed)
-		{
-			Login-AzureRmAccount -TenantId $TenantId
-			#mkdir $basePath
-			$Subscriptions = Get-AzureRmSubscription 
-			foreach ($Subscription in $Subscriptions)
-			{
-				
-				[String]$SubscriptionName= $Subscription.name
-				set-azureRMcontext -Name $SubscriptionName
-				Save-AzureRMContext -Path "$basePath\$SubscriptionName.json" -Force
-			}
-		}
-		else
-		{
-			Import-AzureRmContext -Path $basePath"_profile.json"
-		}
+		$applicationId = "042af287-6486-4067-8324-f60174fce5b4";
+		$securePassword = "9G9nVmBV3oW2oATHvaOPhgyosU0Qb7UCKnArwWUOBwg=" | ConvertTo-SecureString -AsPlainText -Force
+		
+		
+		$credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $applicationId, $securePassword
+		Connect-AzAccount -ServicePrincipal -Credential $credential -TenantId "92832cfc-349a-4b12-af77-765b6f10b51f"
+		
 		
 		
 		# Fetching subscription list
 		
-		$Global:subscription_list = get-azurermsubscription
+		$Global:subscription_list = get-azsubscription
 		$richtextbox1.Text = "Authenticated" + $Global:NewLine
 		Update-ListBox $listbox1 $Global:subscription_list
 		
